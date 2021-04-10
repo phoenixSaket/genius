@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+html,
+body {
+    height: 100%;
+}
+
+body,
+* {
+    margin: 0;
+    font-family: "Cabin", sans-serif;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.mat-white {
+    background-color: white;
+}
+
+.links-container {
+    color: black;
+}
+
+.link {
+    padding: 0px 10px;
+    border-radius: 2px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.link:hover {
+    background-color: #dfefdf;
+}
