@@ -15,10 +15,10 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.images.push("/assets/Images/Sales.png");
-    this.images.push("/assets/Images/Services.png");
-    this.images.push("/assets/Images/CCTV.png");
-    this.images.push("/assets/Images/AMC.png");
+    this.images.push("https://raw.githubusercontent.com/phoenixSaket/genius/main/src/assets/Images/Sales.png");
+    this.images.push("https://raw.githubusercontent.com/phoenixSaket/genius/main/src/assets/Images/Services.png");
+    this.images.push("https://raw.githubusercontent.com/phoenixSaket/genius/main/src/assets/Images/CCTV.png");
+    this.images.push("https://raw.githubusercontent.com/phoenixSaket/genius/main/src/assets/Images/AMC.png");
 
     secondHand.data.forEach(element => {
       this.secondHandData.push(element);
