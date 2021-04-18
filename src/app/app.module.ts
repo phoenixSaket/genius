@@ -9,6 +9,8 @@ import { HomeComponent } from './components/home/home.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { QuoteBoxComponent } from './quote-box/quote-box.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,15 @@ import { ContactComponent } from './components/contact/contact.component';
     HomeComponent,
     ServicesComponent,
     ProductsComponent,
-    ContactComponent
+    ContactComponent,
+    QuoteBoxComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

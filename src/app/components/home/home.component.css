@@ -1,0 +1,35 @@
+.grid-box {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 3fr 1fr;
+}
+
+.box-height {
+    height: 100%;
+}
+
+.image-product {
+    width: 100%;
+    height: auto;
+}
+
+.image-container {
+    width: 100%;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin: 40px 0px;
+    height: fit-content;
+    padding: 40px;
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background-position: center;
+    background-size: cover;
+    /* background-blend-mode: luminosity; */
+}

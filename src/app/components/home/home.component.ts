@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { secondHand } from "./second-hand";
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  images: string[] = [];
+  secondHandData:any[] = [];
 
-  ngOnInit(): void {
+  constructor() {
   }
 
+  ngOnInit(): void {
+    this.images.push("/assets/Images/Sales.png");
+    this.images.push("/assets/Images/Services.png");
+    this.images.push("/assets/Images/CCTV.png");
+    this.images.push("/assets/Images/AMC.png");
+
+    secondHand.data.forEach(element => {
+      this.secondHandData.push(element);
+    });
+  }
+
+  carousel() {
+    let myIndex = 0;
+    let i;
+    let x = Array.from(document.getElementsByClassName('mySlides') as HTMLCollectionOf<HTMLElement>);
+    
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+
+    myIndex++;
+    if (myIndex > x.length) { myIndex = 1 }
+    x[myIndex - 1].style.display = "block";
+    setTimeout(this.carousel, 250);
+  }
 }
