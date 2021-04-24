@@ -1,6 +1,6 @@
 .outerQuote {
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 3rem;
     line-height: 4rem;
     width: 100%;
     text-overflow: break-word;
@@ -17,12 +17,15 @@
 
 .quote {
     margin: 0px 25px;
+    text-shadow: 0px 0px 10px white;
 }
 
-.height {
-    height: 100%;
+.height300 {
+    height: 300px;
 }
 
+
+/* 
 .quote:nth-child(even) {
     color: white;
     animation: colorChange 10s infinite ease-in-out;
@@ -65,4 +68,4 @@
         color: #000000;
         text-shadow: 0px 0px 5px white;
     }
-}
+} */

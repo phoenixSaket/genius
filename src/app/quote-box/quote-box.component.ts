@@ -7,19 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuoteBoxComponent implements OnInit {
 
-  public quote: string =  "Technology is really at it's best when it brings people together.";
-  public array: string[] = [];
-  
-  constructor() { }
-  
-  ngOnInit(): void {
+  typewriter_text = "It's not the faith in technology. It's the faith in people.";
+  typewriter_display: string = "";
 
-    let temp = this.quote.split(" ");
-    temp.forEach(element => {
-      this.array.push(element);
-    });
+  constructor() { }
+
+  ngOnInit(): void {
+    this.typingCallback(this);
   }
-  
-  
+
+  typingCallback(that: any) {
+    
+    let total_length = that.typewriter_text.length;
+    let current_length = that.typewriter_display.length;
+    if (current_length < total_length) {
+      that.typewriter_display += that.typewriter_text[current_length];
+      setTimeout(that.typingCallback, 100, that);
+    } 
+  }
+
 }
 
