@@ -6,8 +6,21 @@
         <div class="links-container d-flex justify-content-between">
             <a class="link cursor" href="#home">Home</a>
             <a class="link cursor" href="#services">Services</a>
-            <a class="link cursor" href="#products">Products</a>
+            <!-- <a class="link cursor" href="#products">Products</a> -->
             <a class="link cursor" href="#contact">Contact</a>
+        </div>
+        <div class="links-container-mobile">
+            <div class="ham-container" (click)="hamClicked()">
+                <span class="black cursor material-icons d-flex justify-content-center align-items-center">
+                    menu
+                </span>
+            </div>
+            <div class="links-mobile d-flex w-100 height-full flex-column justify-content-center align-items-center" *ngIf="this.showMenu">
+                <a class="link cursor w-100 d-flex justify-content-center" href="#home" (click)="hamClicked()">Home</a>
+                <a class="link cursor w-100 d-flex justify-content-center" href="#services" (click)="hamClicked()">Services</a>
+                <!-- <a class="link cursor w-100 d-flex justify-content-center" href="#products" (click)="hamClicked()">Products</a> -->
+                <a class="link cursor w-100 d-flex justify-content-center" href="#contact" (click)="hamClicked()">Contact</a>
+            </div>
         </div>
     </div>
 </mat-toolbar>
@@ -21,9 +34,9 @@
         <app-services class="w-100"></app-services>
     </div>
 
-    <div class="container d-flex justify-content-center flex-column align-items-center" id="products">
+    <!-- <div class="container d-flex justify-content-center flex-column align-items-center" id="products">
         <app-products class="w-100"></app-products>
-    </div>
+    </div> -->
 
     <div class="container d-flex justify-content-center flex-column align-items-center" id="contact">
         <app-contact class="w-100"></app-contact>

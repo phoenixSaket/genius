@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'genius';
+  showMenu: boolean = false;
+
+
+  hamClicked() {
+    this.showMenu = !this.showMenu;
+  }
 }

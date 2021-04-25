@@ -13,7 +13,7 @@ export class ServicesComponent implements OnInit {
   constructor() {
     this.images.push({ src: this.baseURL + "amc.png", text: "Annual Maintenance Contract", alt: "amc" });
     this.images.push({ src: this.baseURL + "cctv.png", text: "CCTV Installation", alt: "cctv" });
-    this.images.push({ src: this.baseURL + "cpu.png", text: "Hardware Installation / Upgradation / Configuration", alt: "hardware" });
+    this.images.push({ src: this.baseURL + "cpu.png", text: "Hardware Installation / Configuration", alt: "hardware" });
     this.images.push({ src: this.baseURL + "Installation.png", text: "Assembly & Installation", alt: "installation" });
     this.images.push({ src: this.baseURL + "LaptopRepair.png", text: "Laptop / Desktop Repair", alt: "laptop" });
     this.images.push({ src: this.baseURL + "mainten.png", text: "Computer Maintenance", alt: "maintenance" });

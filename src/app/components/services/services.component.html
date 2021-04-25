@@ -1,8 +1,21 @@
-<div class="d-flex background justify-content-center w-100 flex-wrap">
+<div class="d-flex background justify-content-center w-100 flex-wrap onDesktop">
     <div class="service d-flex flex-column" *ngFor="let image of this.images">
         <img [src]="image.src" class="service-image" alt="image.alt" />
         <span class="d-flex justify-content-center align-items-start height100 padding-td-5">
             <span class="text-center">{{image.text}}</span>
         </span>
     </div>
+</div>
+
+<div class="onMobile padding-td-5">
+    <ngb-carousel class="box-height " *ngIf="images" [interval]="3000" [pauseOnHover]=true [pauseOnFocus]=true [showNavigationArrows]=true [showNavigationIndicators]=true>
+        <ng-template ngbSlide *ngFor="let image of this.images">
+            <div class="padding-td-30 picsum-img-wrapper blackBG d-flex justify-content-center">
+                <img [src]="image.src" alt="image.alt">
+            </div>
+            <span class="d-flex justify-content-center align-items-start height100 padding-td-5">
+                <span class="text-center white">{{image.text}}</span>
+            </span>
+        </ng-template>
+    </ngb-carousel>
 </div>

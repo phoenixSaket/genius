@@ -37,6 +37,14 @@
     height: 80px;
 }
 
+.white {
+    color: white;
+    font-size: 18px;
+    overflow-y: hidden;
+    height: fit-content;
+    padding: 5px;
+}
+
 .background {
     background-color: black;
     color: white;
@@ -50,4 +58,26 @@
 
 .padding-td-5 {
     padding: 10px 0;
+}
+
+.padding-td-30 {
+    padding: 30px 0;
+}
+
+@media (max-width: 576px) {
+    .onMobile {
+        display: block !important;
+    }
+    .onDesktop {
+        display: none !important;
+    }
+}
+
+@media (min-width: 577px) {
+    .onMobile {
+        display: none !important;
+    }
+    .onDesktop {
+        display: flex !important;
+    }
 }
