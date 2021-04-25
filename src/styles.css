@@ -75,3 +75,7 @@ a {
     color: rgb(95, 95, 95);
     text-decoration: underline rgb(112, 102, 102) !important;
 }
+
+.text-center {
+    text-align: center;
+}
