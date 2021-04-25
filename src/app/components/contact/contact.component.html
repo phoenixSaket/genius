@@ -1,3 +1,27 @@
-<div class="background d-flex w-100">
+<div class="background d-flex justify-content-end w-100">
+    <form class="d-flex flex-column w-40">
 
+        <!-- <h2 class="title">Contact</h2> -->
+
+        <mat-form-field class="input">
+            <mat-label>Name</mat-label>
+            <input matInput required>
+        </mat-form-field>
+
+        <mat-form-field class="input">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput required>
+        </mat-form-field>
+        <mat-form-field class="input">
+            <mat-label>Phone</mat-label>
+            <input type="text" matInput required>
+        </mat-form-field>
+
+        <mat-form-field class="input">
+            <mat-label>Comments</mat-label>
+            <textarea rows="5" matInput required></textarea>
+        </mat-form-field>
+
+        <button mat-raised-button>Send Mail</button>
+    </form>
 </div>

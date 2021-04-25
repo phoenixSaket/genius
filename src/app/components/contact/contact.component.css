@@ -1,7 +1,73 @@
 .background {
-    background-image: url("https://raw.githubusercontent.com/phoenixSaket/genius/main/src/assets/Images/background.png");
-    height: 800px;
+    background-image: url("../../../assets/Images/Genius-bg.png");
+    /* height: 800px; */
+    width: 100vw;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    padding: 5em 5em;
+}
+
+.input {
+    text-align: end;
+    color: black !important;
+}
+
+input[type=text],
+mat-label {
+    color: black !important;
+}
+
+.title {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+    overflow-y: hidden;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.w-40 {
+    width: 45%;
+}
+
+@media (max-width: 576px) {
+    .w-40 {
+        width: 100% !important;
+        padding: 20px;
+        background-color: #47474747;
+    }
+    .background {
+        background-image: unset;
+        /* height: 800px; */
+        width: 100vw;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 2em 2em;
+        background-color: black;
+        padding-bottom: 10px;
+    }
+    input[type=text],
+    mat-label,
+     ::placeholder {
+        color: white !important;
+    }
+    .title {
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        font-size: 30px;
+        overflow-y: hidden;
+        text-align: center;
+        color: white;
+    }
+}
+
+@media (min-width: 577px) {
+    .w-40 {
+        width: 45% !important;
+        padding: 40px;
+        border-radius: 10px;
+        background-color: #47474747;
+    }
 }
