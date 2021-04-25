@@ -1,1 +1,6 @@
-<p>services works!</p>
+<div class="d-flex background">
+    <div class="service" *ngFor="let image of this.images">
+        <img src="image.src" class="service-image" alt="image.alt" />
+        <span>{{image.text}}</span>
+    </div>
+</div>
