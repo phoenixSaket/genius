@@ -1,3 +1,7 @@
 .background {
-    background-image: url("assets/Images/background.png");
+    background-image: url("https://raw.githubusercontent.com/phoenixSaket/genius/main/src/assets/Images/background.png");
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
